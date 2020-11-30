@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.probable_potatos.picturesharingapp.GroupManagement.CreateGroup">
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="16dp"
+        android:text="NEW GROUP"
+        app:layout_constraintBottom_toTopOf="@+id/groupNameInput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Group name:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/groupNameInput"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/groupDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Group Duration:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/groupDurationInput"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/groupNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/groupDurationInput"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTop" />
+
+    <EditText
+        android:id="@+id/groupDurationInput"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/createGroupButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupNameInput" />
+
+    <Button
+        android:id="@+id/createGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="251dp"
+        android:onClick="CreateGroup"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupDurationInput" />
+
+    <ImageView
+        android:id="@+id/qrImage"
+        android:layout_width="268dp"
+        android:layout_height="233dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Minutes"
+        app:layout_constraintBaseline_toBaselineOf="@+id/groupDurationInput"
+        app:layout_constraintStart_toEndOf="@+id/groupDurationInput" />
+
+</android.support.constraint.ConstraintLayout>

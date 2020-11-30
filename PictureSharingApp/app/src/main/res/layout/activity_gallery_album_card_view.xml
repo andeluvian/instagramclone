@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.probable_potatos.picturesharingapp.Gallery">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/galleryCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/folderPic"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/folderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/folderPic"
+                android:paddingHorizontal="2dp"
+                android:paddingVertical="2dp"
+                android:text="MeetingPrivate"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/picNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/folderName"
+                android:paddingHorizontal="2dp"
+                android:paddingVertical="2dp"
+                android:text="5"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/cloudPic"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignRight="@+id/folderPic"
+                android:layout_below="@+id/folderPic"
+                android:paddingRight="4dp"
+                app:srcCompat="@drawable/cloud_yes" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

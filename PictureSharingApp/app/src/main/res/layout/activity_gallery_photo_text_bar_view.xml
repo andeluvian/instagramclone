@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.probable_potatos.picturesharingapp.Gallery">
+
+    <TextView
+        android:id="@+id/barText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:paddingBottom="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="8sp"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "409181022813",
+    "firebase_url": "https://potato-1aac5.firebaseio.com",
+    "project_id": "potato-1aac5",
+    "storage_bucket": "potato-1aac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409181022813:android:770e723a81c93ef8",
+        "android_client_info": {
+          "package_name": "com.probable_potatos.picturesharingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409181022813-tk60tjle4qt7f4bvtnepsdf5nhjp9i12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoGuzw_Y9PvYkIEQ3bY1yvNNvtL5CtTA0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
